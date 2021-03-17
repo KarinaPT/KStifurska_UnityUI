@@ -9,12 +9,15 @@ public class VardaParadisana : MonoBehaviour
         
     }
     public string teksts;
+
     public GameObject ievadesLauks;
+
     public GameObject tekstaAttelosana;
 
     public void uzglabaTekstu()
     {
         teksts = ievadesLauks.GetComponent<Text>().text;
-        tekstaAttelosana.GetComponent<Text>().text = "Supervaronis " + teksts.ToUpper() + "ir gadus vecs!";
+   
+        tekstaAttelosana.GetComponent<Text>().text = "Supervaronis " + teksts.ToUpper();
     }
 }
