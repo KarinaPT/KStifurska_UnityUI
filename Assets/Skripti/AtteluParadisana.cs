@@ -24,16 +24,14 @@ public class AtteluParadisana : MonoBehaviour
 
     public GameObject mainigaisAttels;
     public Sprite[] atteluMasivs;
-    void Update()
-    {
-        
-    }
-    //Spider
+
     public void mainitLielumu()
     {
         float pasreizejaVertiba = slaideris.GetComponent<Slider>().value;
-        mainigaisAttels.transform.localScale = new Vector3(1F * pasreizejaVertiba,1F * pasreizejaVertiba, 1);
+        mainigaisAttels.transform.localScale = new Vector3(1F * pasreizejaVertiba, 1F * pasreizejaVertiba, 1);
     }
+
+
 
     //CAUSTIC SETUP1
     public void biksesCAttelosana(bool vertiba)
